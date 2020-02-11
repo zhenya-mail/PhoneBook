@@ -13,24 +13,36 @@
                title="Только русские или латинские буквы"  placeholder="Отчество">
         <input type="text" name="year" pattern="[0-9]{4,4}"
                title="Год - четыре цифры" placeholder="Год рождения">
-        <br>
+        <div> Мобильный
         <input type="tel" name="phone0" pattern="[0-9]{0,12}"
-               title="Только цифры, максимум 12 цифр" placeholder="Мобильный">
+               title="Только цифры, максимум 12 цифр" placeholder="Мобильный"></div>
+        <div> Домашний
         <input type="tel" name="phone1" pattern="[0-9]{0,12}"
                title="Только цифры, максимум 12 цифр" placeholder="Домашний">
+        </div>
+        <div> Рабочий
         <input type="tel" name="phone2" pattern="[0-9]{0,12}"
                title="Только цифры, максимум 12 цифр" placeholder="Рабочий">
+        </div>
+        <div> Другой
         <input type="tel" name="phone3" pattern="[0-9]{0,12}"
                title="Только цифры, максимум 12 цифр" placeholder="Другой">
+        </div>
+        <div> Другой
         <input type="tel" name="phone4" pattern="[0-9]{0,12}"
                title="Только цифры, максимум 12 цифр" placeholder="Другой">
-        <button type="submit">Добавить</button>
+        </div>
+        <br>
+        <div>
+        <button type="submit">Добавить</button>   ${Ok!}</div>
     </form>
     <br>
-    ${Ok!}
+    <form method="get" action="/">
+        <button type="submit">Назад</button>
+    </form>
+
 </div>
-<br>
-<a href="/">Назад</a>
+
 
 
 

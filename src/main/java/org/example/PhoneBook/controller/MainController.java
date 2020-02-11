@@ -108,11 +108,10 @@ public class MainController {
     @Transactional
     @PostMapping("/del")
     public String del(
-            @RequestParam(required = true) Integer id,
-            Map<String, Object> model) {
+            @RequestParam(required = true) Integer id
+            ) {
         peopleRepo.deleteById(id);
-        model.put("Ok", "Успешно удаленно");
-        return "del";
+        return "redirect:/";
     }
 
     @PostMapping("/edit")

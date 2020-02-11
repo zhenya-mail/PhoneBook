@@ -13,30 +13,45 @@
                    title="Только русские или латинские буквы"  value="${viewPeople.midName!}">
             <input type="text" name="year" pattern="[0-9]{4,4}"
                    title="Год - четыре цифры" value="${viewPeople.year!}">
-            <br>
+            <div> Мобильный
             <input type="text" name="phone0" pattern="[0-9]{0,12}"
                    title="Только цифры, максимум 12 цифр" value="${viewPeople.phone0!}">
+             </div>
+            <div> Домашний
             <input type="text" name="phone1" pattern="[0-9]{0,12}"
                    title="Только цифры, максимум 12 цифр" value="${viewPeople.phone1!}">
-            <input type="text" name="phone2" pattern="[0-9]{0,12}"
+            </div>
+                <div> Рабочий
+                <input type="text" name="phone2" pattern="[0-9]{0,12}"
                    title="Только цифры, максимум 12 цифр" value="${viewPeople.phone2!}">
-            <input type="text" name="phone3" pattern="[0-9]{0,12}"
+                </div>
+             <div> Другой
+                 <input type="text" name="phone3" pattern="[0-9]{0,12}"
                    title="Только цифры, максимум 12 цифр" value="${viewPeople.phone3!}">
-            <input type="text" name="phone4" pattern="[0-9]{0,12}"
+             </div>
+             <div> Другой
+                 <input type="text" name="phone4" pattern="[0-9]{0,12}"
                    title="Только цифры, максимум 12 цифр" value="${viewPeople.phone4!}">
-            <button type="submit">Сохранить</button>
+             </div>
+            <div>
+            <button type="submit">Сохранить</button> ${Ok!}
+            </div>
         </form>
         <br>
-        <form method="post" action="del">
+        <div><form method="post" action="del" onclick="return confirm('Точно удалить?')">
             <input type="hidden" name="id" value="${viewPeople.id}">
             <button type="submit">Удалить</button>
         </form>
+        </div>
         <br>
+        <div><form method="get" action="/">
+                   <button type="submit">Назад</button>
+        </form>
+        </div>
     </div>
 <#else>
 No edit data
 </#list>
-${Ok!}
-<br>
-<a href="/">Назад</a>
+
+
 </@c.page>
