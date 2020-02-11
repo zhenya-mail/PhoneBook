@@ -10,8 +10,8 @@ public interface PeopleRepo extends CrudRepository<People, Long> {
     List<People> findById(Integer id);
     void deleteById(Integer id);
     List<People> findByPhone0ContainingOrPhone1ContainingOrPhone2ContainingOrPhone3ContainingOrPhone4Containing(String phone0,String phone1,String phone2,String phone3,String phone4);
-    List<People> findByLastNameContainingAndFirstNameContainingAndMidNameContaining(String lastName,String firstName,String midName);
+    List<People> findByLastNameContainingIgnoreCaseAndFirstNameContainingIgnoreCaseAndMidNameContainingIgnoreCase(String lastName,String firstName,String midName);
     List<People> findByLastNameContainingOrFirstNameContainingOrMidNameContaining(String lastName,String firstName,String midName);
-    @Query("select p from People p where ((p.lastName like %?1%) and (p.firstName like %?2%)) or ((p.firstName like %?1%) and (p.midName like %?2%))")
+    @Query("select p from People p where ((upper(p.lastName) like concat ('%',upper(?1),'%')) and (upper(p.firstName) like concat('%',upper(?2),'%'))) or ((upper(p.firstName) like concat ('%',upper(?1),'%')) and (upper(p.midName) like concat ('%',upper(?2),'%')))")
     List<People> findTwoName(String Name1, String Name2);
 }

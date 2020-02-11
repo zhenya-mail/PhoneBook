@@ -25,21 +25,21 @@
 <#list viewP! as viewPeople>
 <div>
     <br>
-    <form method="post" action="/edit">
+
     <b>${viewPeople.id}</b>
     <b>${viewPeople.lastName}</b>
     <b>${viewPeople.firstName}</b>
     <b>${viewPeople.midName}</b>
     <b>${viewPeople.year}</b>
+            Мобильный <i>${viewPeople.phone0}</i>
+            Рабочий <i>${viewPeople.phone1}</i>
+            Домашний <i>${viewPeople.phone2}</i>
+            Другой <i>${viewPeople.phone3}</i>
+            Другой <i>${viewPeople.phone4}</i>
+    <form method="post" action="/edit">
         <input type="hidden" name="id" value="${viewPeople.id}">
         <button type="submit">Редактировать</button>
     </form>
-        <b>Мобильный ${viewPeople.phone0!}</b>
-            <b>Рабочий ${viewPeople.phone1!}</b>
-            <b>Домашний ${viewPeople.phone2!}</b>
-            <b>Другой ${viewPeople.phone3!}</b>
-            <b>Другой ${viewPeople.phone4!}</b>
-
 
 
 </div>

@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfd75361-79ac-4579-9814-263ea258fa03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/AddController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/temp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/repo/PeopleRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/repo/PeopleRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/repo/PeopleRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/repo/PeopleRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/del.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,7 +46,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XDORlxpvsMCzOystq61HVb9LCg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -115,37 +122,41 @@
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="2290" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581179315613" />
-    <state width="1237" height="325" key="GridCell.Tab.0.bottom" timestamp="1581440113049">
+    <state width="1237" height="325" key="GridCell.Tab.0.bottom" timestamp="1581458523144">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581440113049" />
-    <state width="1237" height="325" key="GridCell.Tab.0.center" timestamp="1581440113048">
+    <state width="1237" height="325" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581458523144" />
+    <state width="1237" height="325" key="GridCell.Tab.0.center" timestamp="1581458523144">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581440113048" />
-    <state width="1237" height="325" key="GridCell.Tab.0.left" timestamp="1581440113048">
+    <state width="1237" height="325" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581458523144" />
+    <state width="1237" height="325" key="GridCell.Tab.0.left" timestamp="1581458523143">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581440113048" />
-    <state width="1237" height="325" key="GridCell.Tab.0.right" timestamp="1581440113048">
+    <state width="1237" height="325" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581458523143" />
+    <state width="1237" height="325" key="GridCell.Tab.0.right" timestamp="1581458523144">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581440113048" />
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1581440112897">
+    <state width="1237" height="325" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581458523144" />
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1581458522975">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581440112897" />
-    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1581440112897">
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581458522975" />
+    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1581458522974">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581440112897" />
-    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1581440112897">
+    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581458522974" />
+    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1581458522974">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581440112897" />
-    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1581440112897">
+    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581458522974" />
+    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1581458522974">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581440112897" />
+    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581458522974" />
+    <state x="2223" y="211" width="672" height="678" key="search.everywhere.popup" timestamp="1581446107005">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="2223" y="211" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581446107005" />
   </component>
 </project>

@@ -18,10 +18,11 @@
         <b>${viewPeople.lastName}</b>
         <b>${viewPeople.firstName}</b>
         <b>${viewPeople.midName}</b>
-        <b>${viewPeople.year}</b>
+        <b>${viewPeople.year}</b></div>
         <input type="hidden" name="id" value="${viewPeople.id}">
         <button type="submit">Редактировать</button>
     </form>
+<div>
     <b>Мобильный ${viewPeople.phone0!}</b>
     <b>Рабочий ${viewPeople.phone1!}</b>
     <b>Домашний ${viewPeople.phone2!}</b>
