@@ -39,7 +39,7 @@
 
     <br>
     <form method="get" action="/">
-        <button type="submit">Назад</button>
+        <button type="submit">Отмена</button>
     </form>
 </div>
 

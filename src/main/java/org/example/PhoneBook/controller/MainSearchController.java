@@ -25,7 +25,7 @@ public class MainSearchController {
             if (searchFIO.length == 1) {
                 if (searchFIO[0] != null && !searchFIO[0].isEmpty() && !searchFIO[0].matches("\\d")) {
 
-                    viewP = peopleRepo.findByLastNameContainingOrFirstNameContainingOrMidNameContaining(searchFIO[0], searchFIO[0], searchFIO[0]);
+                    viewP = peopleRepo.findByLastNameContainingIgnoreCaseOrFirstNameContainingIgnoreCaseOrMidNameContainingIgnoreCase(searchFIO[0], searchFIO[0], searchFIO[0]);
                 }
 
             }

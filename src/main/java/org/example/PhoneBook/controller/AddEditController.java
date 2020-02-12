@@ -67,6 +67,7 @@ public class AddEditController {
             Map<String, Object> model) {
         People viewPeople = new People(id, lastName, firstName, midName, year, phone0, phone1, phone2, phone3, phone4);
         peopleRepo.save(viewPeople);
+       // peopleRepo
         return "redirect:/";
 
     }

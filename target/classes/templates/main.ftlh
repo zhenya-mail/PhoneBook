@@ -8,7 +8,7 @@
 
 <div>Поиск по ФИО или телефону</div>
 <div>Фамилия Имя Отчество - любые, даже частично известные данные через пробел, от одного до 3-х слов</div>
-<div>Телефон - любые известные цифры</div>
+<div>Телефон - любые, известные цифры</div>
 <br>
 <form method="get" action="/">
     <input type="text" name="search" value="${search!}" >
@@ -26,7 +26,6 @@
 <div>
     <br>
 
-    <b>${viewPeople.id}</b>
     <b>${viewPeople.lastName}</b>
     <b>${viewPeople.firstName}</b>
     <b>${viewPeople.midName}</b>

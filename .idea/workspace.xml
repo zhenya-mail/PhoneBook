@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfd75361-79ac-4579-9814-263ea258fa03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/AddEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/AddEditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/MainSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/MainSearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/repo/PeopleRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/repo/PeopleRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/AddEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/AddEditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/MainSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/MainSearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/repo/PeopleRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/repo/PeopleRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/add.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/add.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/edit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,12 +100,20 @@
       <option name="project" value="LOCAL" />
       <updated>1581535890514</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new4">
+      <created>1581536765876</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581536765876</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new3" />
-    <option name="LAST_COMMIT_MESSAGE" value="new3" />
+    <MESSAGE value="new4" />
+    <option name="LAST_COMMIT_MESSAGE" value="new4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2152" y="151" key="#Project_Structure" timestamp="1581367896574">
@@ -125,42 +140,42 @@
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="2290" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581179315613" />
-    <state x="2214" y="87" key="CommitChangelistDialog2" timestamp="1581536765064">
+    <state x="2214" y="87" key="CommitChangelistDialog2" timestamp="1581545323124">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="2214" y="87" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581536765064" />
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1581536755818">
+    <state x="2214" y="87" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545323124" />
+    <state width="1237" height="325" key="GridCell.Tab.0.bottom" timestamp="1581545372473">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581536755818" />
-    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1581536755818">
+    <state width="1237" height="325" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545372473" />
+    <state width="1237" height="325" key="GridCell.Tab.0.center" timestamp="1581545372473">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581536755818" />
-    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1581536755818">
+    <state width="1237" height="325" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545372473" />
+    <state width="1237" height="325" key="GridCell.Tab.0.left" timestamp="1581545372473">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581536755818" />
-    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1581536755818">
+    <state width="1237" height="325" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545372473" />
+    <state width="1237" height="325" key="GridCell.Tab.0.right" timestamp="1581545372473">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581536755818" />
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1581535852177">
+    <state width="1237" height="325" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545372473" />
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1581545372280">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581535852177" />
-    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1581535852177">
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545372280" />
+    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1581545372280">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581535852177" />
-    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1581535852176">
+    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545372280" />
+    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1581545372280">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581535852176" />
-    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1581535852177">
+    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545372280" />
+    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1581545372280">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581535852177" />
+    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545372280" />
     <state x="2012" y="92" width="1096" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581534647697">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
