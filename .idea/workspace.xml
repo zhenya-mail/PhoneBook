@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfd75361-79ac-4579-9814-263ea258fa03" name="Default Changelist" comment="">
+    <list default="true" id="cfd75361-79ac-4579-9814-263ea258fa03" name="Default Changelist" comment="new5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook2020" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook2020" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -105,13 +107,28 @@
       <option name="project" value="LOCAL" />
       <updated>1581545422280</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new5">
+      <created>1581545706346</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581545706346</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new5">
+      <created>1581545755227</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581545755227</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new3" />
     <MESSAGE value="new4" />
-    <option name="LAST_COMMIT_MESSAGE" value="new4" />
+    <MESSAGE value="new5" />
+    <option name="LAST_COMMIT_MESSAGE" value="new5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2152" y="151" key="#Project_Structure" timestamp="1581367896574">
@@ -138,10 +155,14 @@
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="2290" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581179315613" />
-    <state x="2214" y="87" key="CommitChangelistDialog2" timestamp="1581545705550">
+    <state x="2214" y="87" key="CommitChangelistDialog2" timestamp="1581545860863">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="2214" y="87" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545705550" />
+    <state x="2214" y="87" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545860863" />
+    <state x="1938" y="150" key="DiffContextDialog" timestamp="1581545843712">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1938" y="150" key="DiffContextDialog/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545843712" />
     <state width="1237" height="325" key="GridCell.Tab.0.bottom" timestamp="1581545734312">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
@@ -178,6 +199,10 @@
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="2012" y="92" width="1096" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581534647697" />
+    <state x="2369" y="410" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581545795021">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="2369" y="410" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581545795021" />
     <state x="2223" y="211" width="672" height="678" key="search.everywhere.popup" timestamp="1581446107005">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
