@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd75361-79ac-4579-9814-263ea258fa03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/AddEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/AddEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/MainSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/MainSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/repo/PeopleRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/repo/PeopleRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/AddEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/AddEditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/MainSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/MainSearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/repo/PeopleRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/repo/PeopleRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/add.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/add.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/edit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581536765876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new4">
+      <created>1581545422280</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581545422280</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
