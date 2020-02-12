@@ -38,16 +38,18 @@
             </div>
         </form>
         <br>
-        <div><form method="post" action="del" onclick="return confirm('Точно удалить?')">
-            <input type="hidden" name="id" value="${viewPeople.id}">
-            <button type="submit">Удалить</button>
+        <div><form method="get" action="/">
+            <button type="submit">Отмена</button>
         </form>
         </div>
         <br>
-        <div><form method="get" action="/">
-                   <button type="submit">Назад</button>
+        <div><form method="post" action="del" onclick="return confirm('Точно удалить?')">
+            <input type="hidden" name="id" value="${viewPeople.id}">
+            <button type="submit">Удалить контакт</button>
         </form>
         </div>
+
+
     </div>
 <#else>
 No edit data

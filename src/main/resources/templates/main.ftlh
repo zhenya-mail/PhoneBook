@@ -26,7 +26,6 @@
 <div>
     <br>
 
-    <b>${viewPeople.id}</b>
     <b>${viewPeople.lastName}</b>
     <b>${viewPeople.firstName}</b>
     <b>${viewPeople.midName}</b>
