@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd75361-79ac-4579-9814-263ea258fa03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/AddEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/AddEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/MainSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PhoneBook/controller/MainSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/AddController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PhoneBook/controller/SearchController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/add.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/add.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/edit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edit.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +84,19 @@
       <option name="presentableId" value="Default" />
       <updated>1580577192913</updated>
     </task>
+    <task id="LOCAL-00001" summary="new3">
+      <created>1581535890514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581535890514</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new3" />
+    <option name="LAST_COMMIT_MESSAGE" value="new3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2152" y="151" key="#Project_Structure" timestamp="1581367896574">
@@ -122,10 +123,10 @@
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="2290" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581179315613" />
-    <state x="2214" y="87" key="CommitChangelistDialog2" timestamp="1581535852148">
+    <state x="2214" y="87" key="CommitChangelistDialog2" timestamp="1581535889413">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="2214" y="87" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581535852148" />
+    <state x="2214" y="87" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1581535889413" />
     <state width="1237" height="325" key="GridCell.Tab.0.bottom" timestamp="1581535852176">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
