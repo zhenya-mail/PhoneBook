@@ -34,14 +34,15 @@
         </div>
         <br>
         <div>
-        <button type="submit">Добавить</button>   ${Ok!}</div>
+        <button type="submit">Добавить</button></div>
     </form>
+
     <br>
     <form method="get" action="/">
         <button type="submit">Назад</button>
     </form>
-
 </div>
+
 
 
 

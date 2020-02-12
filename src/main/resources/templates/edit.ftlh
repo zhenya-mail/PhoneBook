@@ -3,7 +3,7 @@
 
 <#list viewP! as viewPeople>
     <div>
-        <form method="post" action="added">
+        <form method="post" action="/edited">
             <input type="hidden" name="id" value="${viewPeople.id}">
             <input type="text" name="lastName" pattern="[A-Za-zА-Яа-яЁё]+$"
                    title="Только русские или латинские буквы"  value="${viewPeople.lastName!}">

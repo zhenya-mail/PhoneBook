@@ -8,12 +8,10 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.List;
 import java.util.Map;
 
 @Controller
-public class AddController {
+public class AddEditController {
     @Autowired
     private PeopleRepo peopleRepo;
 
@@ -36,16 +34,26 @@ public class AddController {
             Map<String, Object> model) {
         People viewPeople = new People(lastName, firstName, midName, year, phone0, phone1, phone2, phone3, phone4);
         peopleRepo.save(viewPeople);
-        Iterable<People> viewP = peopleRepo.findAll();
-
-        model.put("viewP", viewP);
-        model.put("Ok", "Успешно добавленно");
-        return "add";
+        return "redirect:/";
 
     }
 
+    @PostMapping("/edit")
+    public String edit(
+            @RequestParam(required = false) Integer id, Map<String, Object> model) {
+        Iterable<People> viewP;
+        if (id != null) {
+            viewP = peopleRepo.findById(id);
+        } else {
+            viewP = null;
+        }
+
+        model.put("viewP", viewP);
+        return "edit";
+    }
+
     @PostMapping("/edited")
-    public String added(
+    public String edited(
             @RequestParam Integer id,
             @RequestParam(defaultValue = "") String lastName,
             @RequestParam(defaultValue = "") String firstName,
@@ -59,17 +67,18 @@ public class AddController {
             Map<String, Object> model) {
         People viewPeople = new People(id, lastName, firstName, midName, year, phone0, phone1, phone2, phone3, phone4);
         peopleRepo.save(viewPeople);
-        Iterable<People> viewP = peopleRepo.findById(id);
-        List<People> view = peopleRepo.findById(id);
-        model.put("viewP", viewP);
-        model.put("Ok", "Успешно изменено");
         return "redirect:/";
 
     }
     @Transactional
     @PostMapping("/del")
-    public String del(@RequestParam Integer id){
+    public String del(
+            @RequestParam(required = true) Integer id
+    ) {
         peopleRepo.deleteById(id);
         return "redirect:/";
     }
+
+
+
 }
