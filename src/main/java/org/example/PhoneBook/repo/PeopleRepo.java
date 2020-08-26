@@ -14,4 +14,7 @@ public interface PeopleRepo extends CrudRepository<People, Long> {
     List<People> findByLastNameContainingIgnoreCaseOrFirstNameContainingIgnoreCaseOrMidNameContainingIgnoreCase(String lastName,String firstName,String midName);
     @Query("select p from People p where ((upper(p.lastName) like concat ('%',upper(?1),'%')) and (upper(p.firstName) like concat('%',upper(?2),'%'))) or ((upper(p.firstName) like concat ('%',upper(?1),'%')) and (upper(p.midName) like concat ('%',upper(?2),'%')))")
     List<People> findTwoName(String Name1, String Name2);
+    //@Query("select id from People")
+    //Long findId();
+
 }

@@ -18,6 +18,11 @@
     <input type="hidden" name="search" value="" >
     <button type="submit">Сбросить поиск</button>
 </form>
+    <form method="get" action="/test">
+        <input type="text" name="name">
+        <input type="text" name="sname">
+        <button type="submit">Тест</button>
+    </form>
 <br>
 <div><strong><a href="/add">Добавить новый контакт</a></strong></div>
 <br>
@@ -35,7 +40,19 @@
             Домашний <i>${viewPeople.phone2}</i>
             Другой <i>${viewPeople.phone3}</i>
             Другой <i>${viewPeople.phone4}</i>
-    <form method="post" action="/edit">
+    <#list viewPeople.phoneList>
+        <#items as Ph>
+        Из Другой <i>${Ph.phone00!}</i>
+        Из Другой <i>${Ph.phone01!}</i>
+        Из Другой <i>${Ph.phone02!}</i>
+        </#items>
+    </#list>
+
+    <! --
+   <#list viewPh! as viewPhone>
+            Из другой таблицы <i>${viewPhone.phone00!}</i>
+            </#list>-->
+        <form method="post" action="/edit">
         <input type="hidden" name="id" value="${viewPeople.id}">
         <button type="submit">Редактировать</button>
     </form>
@@ -45,5 +62,6 @@
 <#else>
 No people
 </#list>
+
 
 </@c.page>

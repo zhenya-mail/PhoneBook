@@ -1,7 +1,9 @@
 package org.example.PhoneBook.controller;
 
 import org.example.PhoneBook.People;
+import org.example.PhoneBook.Phone;
 import org.example.PhoneBook.repo.PeopleRepo;
+import org.example.PhoneBook.repo.PhoneRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,11 +11,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import java.util.Map;
+import java.util.Optional;
 
 @Controller
 public class AddEditController {
     @Autowired
     private PeopleRepo peopleRepo;
+//    @Autowired
+//    private PhoneRepo phoneRepo;
 
     @GetMapping("/add")
     public String add() {
@@ -32,8 +37,11 @@ public class AddEditController {
             @RequestParam(defaultValue = "") String phone3,
             @RequestParam(defaultValue = "") String phone4,
             Map<String, Object> model) {
-        People viewPeople = new People(lastName, firstName, midName, year, phone0, phone1, phone2, phone3, phone4);
+        Phone viewPhone = new Phone(phone0, phone1, phone2, phone3, phone4);
+        People viewPeople = new People(viewPhone ,lastName, firstName, midName, year, phone0, phone1, phone2, phone3, phone4);
+
         peopleRepo.save(viewPeople);
+        //phoneRepo.save(viewPhone);
         return "redirect:/";
 
     }

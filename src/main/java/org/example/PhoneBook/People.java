@@ -1,12 +1,22 @@
 package org.example.PhoneBook;
 
+
 import javax.persistence.*;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 public class People {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    @OneToMany (cascade = CascadeType.ALL)
+    List<Phone> phoneList = new ArrayList<>();
+
     private String lastName;
     private String firstName;
     private String midName;
@@ -31,9 +41,10 @@ public class People {
         this.phone2 = phone2;
         this.phone3 = phone3;
         this.phone4 = phone4;
+
     }
 
-    public People(String lastName, String firstName, String midName, String year, String phone0, String phone1, String phone2, String phone3, String phone4) {
+    public People(Phone phone, String lastName, String firstName, String midName, String year, String phone0, String phone1, String phone2, String phone3, String phone4) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.midName = midName;
@@ -43,7 +54,8 @@ public class People {
         this.phone2 = phone2;
         this.phone3 = phone3;
         this.phone4 = phone4;
-    }
+        phoneList.add(phone);
+            }
 
     public Integer getId() {
         return id;
@@ -123,5 +135,22 @@ public class People {
 
     public void setPhone4(String phone4) {
         this.phone4 = phone4;
+    }
+
+    /*public Set<Phone> getPhoneList() {
+        return phoneList;
+    }
+
+    public void setPhoneList(Set<Phone> phoneList) {
+        this.phoneList = phoneList;
+
+    }*/
+
+    public List<Phone> getPhoneList() {
+        return phoneList;
+    }
+
+    public void setPhoneList(List<Phone> phoneList) {
+        this.phoneList = phoneList;
     }
 }

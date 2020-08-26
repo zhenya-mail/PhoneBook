@@ -1,6 +1,7 @@
 package org.example.PhoneBook.controller;
 
 import org.example.PhoneBook.People;
+import org.example.PhoneBook.Phone;
 import org.example.PhoneBook.repo.PeopleRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,12 +11,17 @@ import java.util.Map;
 
 @Controller
 public class MainSearchController {
+
     @Autowired
     private PeopleRepo peopleRepo;
 
+
+
+
     @GetMapping("/")
     public String search(@RequestParam(required = false, defaultValue = "") String search, Map<String, Object> model) {
-        Iterable<People> viewP = null;// = peopleRepo.findAll();
+        Iterable<People> viewP = null;
+        Iterable<Phone> viewPh = null;// = peopleRepo.findAll();
         search = search.trim();
         search = search.replaceAll("\\s+", " ");
         String[] searchFIO = search.split(" ");
@@ -48,8 +54,11 @@ public class MainSearchController {
         }
         if (viewP == null) {
             viewP = peopleRepo.findAll();
+            //viewPh = phoneRepo.findById();
         }
+
         model.put("viewP", viewP);
+        //model.put("viewPh", viewPh);
         model.put("search", search);
         return "main";
     }
