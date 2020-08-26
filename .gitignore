@@ -2,8 +2,8 @@
 Thumbs.db
 #Nuget packages folder
 packages/
-.idea/
-target/
-/src/main/resources/application-de*.properties
-/src/main/resources/application-dev.properties
-.idea/*
+/src/main/resources/application-dev2.properties
+/.idea/*
+/target/*
+/target/classes/templates/main.ftlh
+/.gitignore
