@@ -2,7 +2,6 @@
 Thumbs.db
 #Nuget packages folder
 packages/
-/src/main/resources/application-dev2.properties
 /.idea/*
 /target/*
 /target/classes/templates/main.ftlh
