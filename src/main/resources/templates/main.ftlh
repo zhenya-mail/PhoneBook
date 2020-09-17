@@ -18,11 +18,6 @@
     <input type="hidden" name="search" value="" >
     <button type="submit">Сбросить поиск</button>
 </form>
-    <form method="get" action="/test">
-        <input type="text" name="name">
-        <input type="text" name="sname">
-        <button type="submit">Тест</button>
-    </form>
 <br>
 <div><strong><a href="/add">Добавить новый контакт</a></strong></div>
 <br>
