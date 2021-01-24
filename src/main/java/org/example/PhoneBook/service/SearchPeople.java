@@ -28,7 +28,7 @@ public class SearchPeople {
             List<Long> peopleId = phoneRepo.findByPhoneContaining(
                     searchFIO[0])
                     .stream()
-                    .map(Phone::getId)
+                    .map(phone -> phone.getPeople().getId())
                     .collect(Collectors.toList());
             viewP = (List<People>) peopleRepo.findAllById(peopleId);
         } else {
