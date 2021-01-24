@@ -1,32 +1,36 @@
-package org.example.PhoneBook.controller;
+package org.example.PhoneBook.service;
 
 import org.example.PhoneBook.People;
 import org.example.PhoneBook.Phone;
 import org.example.PhoneBook.repo.PeopleRepo;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import java.util.Map;
+import org.example.PhoneBook.repo.PhoneRepo;
+import org.springframework.stereotype.Service;
 
-@Controller
-public class MainSearchController {
+import java.util.List;
+import java.util.stream.Collectors;
 
-    @Autowired
-    private PeopleRepo peopleRepo;
+@Service
+public class SearchPeople {
+    private final PeopleRepo peopleRepo;
+    private final PhoneRepo phoneRepo;
 
+    public SearchPeople(PeopleRepo peopleRepo, PhoneRepo phoneRepo) {
+        this.peopleRepo = peopleRepo;
+        this.phoneRepo = phoneRepo;
+    }
 
-
-
-    @GetMapping("/")
-    public String search(@RequestParam(required = false, defaultValue = "") String search, Map<String, Object> model) {
-        Iterable<People> viewP = null;
-        Iterable<Phone> viewPh = null;// = peopleRepo.findAll();
+    public List<People> searchPeople(String search) {
+        List<People> viewP = null;
         search = search.trim();
         search = search.replaceAll("\\s+", " ");
         String[] searchFIO = search.split(" ");
         if (searchFIO.length == 1 && searchFIO[0] != null && !searchFIO[0].isEmpty() && searchFIO[0].matches("\\d+")) {
-            viewP = peopleRepo.findByPhone0ContainingOrPhone1ContainingOrPhone2ContainingOrPhone3ContainingOrPhone4Containing(searchFIO[0], searchFIO[0], searchFIO[0], searchFIO[0], searchFIO[0]);
+            List<Long> peopleId = phoneRepo.findByPhoneContaining(
+                    searchFIO[0])
+                    .stream()
+                    .map(Phone::getId)
+                    .collect(Collectors.toList());
+            viewP = (List<People>) peopleRepo.findAllById(peopleId);
         } else {
             if (searchFIO.length == 1) {
                 if (searchFIO[0] != null && !searchFIO[0].isEmpty() && !searchFIO[0].matches("\\d")) {
@@ -52,14 +56,7 @@ public class MainSearchController {
                 }
             }
         }
-        if (viewP == null) {
-            viewP = peopleRepo.findAll();
-            //viewPh = phoneRepo.findById();
-        }
-
-        model.put("viewP", viewP);
-        //model.put("viewPh", viewPh);
-        model.put("search", search);
-        return "main";
+        return viewP;
     }
+
 }
